@@ -35,11 +35,11 @@
 	</head>
 	<body id="main">
 		<p>
-			<a href="index.html">2D</a> <a href="index2.html">3D</a>
+			<a href="index.html">ALL</a> <a href="index1.html">2D</a> <a href="index2.html">3D</a>
 		</p>
 		<button v-on="click: toggle">Show / Hide</button>
 		<div class="container" v-cloak>
-			<div class="card" v-repeat="card : cards" v-transition stagger="70">
+			<div class="card" v-repeat="card : cards" v-transition>
 				<h2>{{card.name}}</h2>Lorem ipsum dolor sit amet</div>
 		</div>
 		<script src="main.js"></script>
