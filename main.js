@@ -31,6 +31,6 @@ new Vue({
 		var self = this;
 		setTimeout(function(){
 			self.cards = samples;
-		}, 1000)
+		}, 500)
 	}
 })
