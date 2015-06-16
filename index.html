@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	
+	<style>
+		.container{
+			
+		}
+		
+		.card{
+			float: left;
+			width: 20%;
+			margin : 10px;
+			padding: 10px;
+			box-shadow:  1px 2px 5px #000;
+		}
+		.v-transition {
+		    transition: all 1s ease;
+		    overflow: hidden;
+		}
+		.v-enter, .v-leave {
+		    opacity: 0;
+		}
+		.v-cloak{
+			display: none;
+		}
+		
+	</style>
+</head>
+<body id="main">
+	<button v-on="click: toggle">Show / Hide</button>
+	<div class="container">
+		<div class="card" v-repeat="card : cards" v-transition stagger="50">
+			<h2>{{card.name}}</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem molestiae quia porro, ipsum deleniti. Tempore sed delectus est perferendis magnam pariatur quo aliquid. Animi cumque repellat non ipsam ab culpa!
+		</div>
+	</div>
+	
+	
+	<script src="main.js"></script>
+</body>
+</html>
